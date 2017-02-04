@@ -1,0 +1,14 @@
+What i learned about event loop.
+
+settimeout is not there in v8 its the webapi same like xhr
+
+js means its own runtime
+
+callstack process the js,webapi browser,eventloop,callback queue,qender queue.
+
+if we exec lot of slow code to the cll stack then the rendering will be blocked as 60fps 16mil performance hit
+
+we need to free the callstack then only event loop can pull item from callback q to callstack.
+so rendering will be smooth.
+
+
